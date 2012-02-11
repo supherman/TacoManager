@@ -1,5 +1,5 @@
 # Taco Manager
-## Main Histories
+## Stories
 ### As a user I should be able to:
 - Manage food delivery services (Menu, price list, address, phone number and delivery cost)
 - I can select an existent delivery service or create a new one.
