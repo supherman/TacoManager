@@ -19,3 +19,9 @@
 ## Wish list
 - Set the order directly with the delivery service 
 - Prepaid the order with credit card
+
+## Technical specs
+- The application should be a REST API on the backend
+- Three main client apps: Web, iOS and Android
+- The Web version should be Backbone.js application
+- First goal: Web client
