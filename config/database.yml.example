@@ -1,0 +1,32 @@
+general: &general
+  adapter: mysql2
+#  adapter: sqlite3
+  encoding: utf8
+  username: root
+  password:
+
+development:
+  <<: *general
+  database: tm_dev
+#  database: db/tm_dev.sqlite3
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
+test: &test
+  <<: *general
+  database: tm_test
+#  database: db/tm_test.sqlite3
+
+staging:
+  <<: *general
+  database: tm_dev
+#  database: db/tm_stage.sqlite3
+
+production:
+  <<: *general
+  database: tm
+#  database: db/tm.sqlite3
+
+cucumber:
+  <<: *test
